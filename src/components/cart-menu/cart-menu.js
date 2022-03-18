@@ -10,6 +10,7 @@ import "./cart-menu.scss";
 export const CartMenu = ({ items, buyClick, closeOpenCart }) => {
   return (
     <div className="overlay">
+      <div onClick={closeOpenCart} className="black"></div>
       <div className="drawer">
         <div className="name-close">
           <div className="nameClose">

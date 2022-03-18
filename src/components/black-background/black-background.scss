@@ -1,0 +1,11 @@
+.black {
+  background-color: #00000071;
+  z-index: 20;
+  width: 100%;
+  height: 1000%;
+  position: absolute;
+  border: solid 2px white;
+  overflow: hidden;
+  grid-row: 1/7;
+  grid-column: 1/7;
+}

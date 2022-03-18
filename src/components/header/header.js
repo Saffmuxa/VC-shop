@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 import { CartBlock } from "../drawer";
 import React, { useState } from "react";
 
@@ -9,16 +10,17 @@ import { CartMenu } from "../cart-menu/cart-menu";
 
 import "./header.scss";
 
-export const Header = () => {
+export const Header = ({ closeOpenCart }) => {
   const items = useSelector((state) => state.cart.itemsInCart);
   const totalPrice = calcTotalPrice(items);
   // const ItemsCounterCart = ({
   //   quantity=0
   // }) => {return quantity >0 ? ()}
-  const [isCart, setCartOpened] = useState(false);
-  const closeOpenCart = () => {
-    setCartOpened(!isCart);
-  };
+  // const [isCart, setCartOpened] = useState(false);
+  // const closeOpenCart = () => {
+  //   setCartOpened(!isCart);
+  //   console.log(isCart);
+  // };
   return (
     <div className="header">
       <div className="header-content">
@@ -32,7 +34,11 @@ export const Header = () => {
           </div>
         </div>
         <ul className="headerRight">
-          <li className="cart-price" onClick={closeOpenCart}>
+          <li
+            className="cart-price"
+            // onChange={closeOpenCart}
+            onClick={closeOpenCart}
+          >
             <div>
               <b>
                 {totalPrice.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ")}
@@ -48,11 +54,11 @@ export const Header = () => {
               <img width={35} height={35} src="/img/cart.svg" alt="cart" />
             </div>
           </li>
-          {isCart ? (
+          {/* {isCart ? (
             <CartMenu items={items} closeOpenCart={closeOpenCart} />
           ) : (
             ""
-          )}
+          )} */}
           <li>
             <Link to="/check">
               <img
