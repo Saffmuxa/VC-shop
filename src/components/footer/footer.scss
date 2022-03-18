@@ -1,0 +1,75 @@
+.footer {
+  max-width: 1080px;
+  min-width: 640px;
+  // margin: 10px auto;
+  // margin-top: auto;
+  // border: solid 2px white;
+  color: rgb(255, 255, 255);
+  // position: sticky;
+  bottom: 0px;
+  font-size: 12px;
+  grid-row: 3/4;
+  grid-column: 2/6;
+
+  .contact-real {
+    display: grid;
+    grid-template-rows: auto 10% minmax(25%, auto) 10px;
+    grid-template-columns:
+      minmax(25%, auto) minmax(5%, auto) minmax(30%, auto) minmax(5%, auto)
+      minmax(35%, auto);
+  }
+}
+.start {
+  border-bottom: inset 2px beige;
+  font-size: 16px;
+
+  margin-bottom: 2px;
+}
+.company {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.sale {
+  margin-top: 10px;
+}
+.buyer {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.mail {
+  grid-row: 1/2;
+  grid-column: 5/6;
+  input {
+    margin-bottom: 10px;
+  }
+  a {
+    color: rgb(190, 186, 250);
+    font-style: italic;
+    border-bottom: 1px solid;
+  }
+}
+.link:link,
+.link:visited {
+  color: rgb(255, 255, 255);
+}
+
+.link:hover {
+  border-bottom: 1px solid;
+}
+.my-name {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  // min-height: 50px;
+}
+.contact-web {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  // align-self: center;
+  // padding: 0px 0px 10px 0px;
+
+  img {
+    padding-right: 15px;
+    width: 60px;
+    // margin-top: auto;
+  }
+}

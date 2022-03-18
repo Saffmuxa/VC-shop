@@ -1,0 +1,22 @@
+.cart-wrap {
+  // border: 2px solid rgb(144, 5, 5);
+  overflow: auto;
+  // display: flex;
+  .card-close {
+    cursor: pointer;
+  }
+}
+.cart-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgb(85, 84, 84);
+  border-radius: 20px;
+  margin: 60px 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
