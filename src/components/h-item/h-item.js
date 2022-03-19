@@ -27,8 +27,8 @@ export const HItem = ({ hardItem }) => {
         <img
           width={25}
           height={25}
-          src="/img/like.svg"
-          alt="unliked"
+          src="/img/forcheck.svg"
+          alt="forcheck"
           className="check"
           //   onClick={favClick}
         />
@@ -48,14 +48,18 @@ export const HItem = ({ hardItem }) => {
         <div onClick={btnClick} className="btn">
           {/* className={isItemAdded(id) ? cardModule.btn : cardModule.btnB} */}
           {isItemCart ? (
-            <img
-              onClick={btnClick}
-              className="added"
-              width={40}
-              height={40}
-              src="/img/added.svg"
-              alt="added"
-            />
+            <>
+              {" "}
+              <img
+                onClick={btnClick}
+                className="added"
+                width={40}
+                height={40}
+                src="/img/added.svg"
+                alt="added"
+              />
+              <p className="buyed">В корзине</p>
+            </>
           ) : (
             <img
               className="add"

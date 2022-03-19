@@ -7,6 +7,7 @@
   height: 330px;
   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out,
     border 0.2s ease-in-out;
+
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -17,8 +18,16 @@
     box-shadow: 0px 5px 10px 0px rgba(71, 71, 71, 0.404);
     border: 2px solid rgb(136, 136, 136);
     transform: translateY(-2px);
+
     // z-index: 1;
+    .check {
+      visibility: visible;
+      opacity: 1;
+      cursor: pointer;
+      // transition: visibility 0.5s ease-in-out;
+    }
   }
+
   p {
     margin: 20px 0;
     font-style: italic;
@@ -27,6 +36,22 @@
 .main-img-card {
   max-width: 90%;
 }
+.buyed {
+  position: absolute;
+  // font-size: 8px;
+  // display: block;
+  animation-name: buyed;
+  animation-duration: 0.5s;
+
+  opacity: 0;
+  // border: 2px solid rgb(136, 136, 136);
+  width: 200%;
+  right: -40%;
+  &:hover {
+    // animation-fill-mode: both;
+  }
+}
+
 .content-price-button {
   display: flex;
   justify-content: space-between;
@@ -50,7 +75,7 @@
   }
   .added {
     animation-name: clickBtns;
-    animation-duration: 0.1s;
+    animation-duration: 0.2s;
   }
 }
 .content-price {
@@ -60,8 +85,12 @@
 
 .check {
   position: absolute;
+  visibility: hidden;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
   // z-index: 0;
 }
+
 .main-img-card {
   display: block;
   margin-left: auto;
@@ -77,5 +106,22 @@
   }
   100% {
     transform: scale(1.1);
+  }
+}
+@keyframes buyed {
+  0% {
+    font-size: 100%;
+    opacity: 1;
+
+    transform: translate(0px, -60px);
+  }
+  // 40% {
+  // opacity: 1;
+  // transform: translateY(-80px);
+  // }
+  100% {
+    opacity: 0;
+    transform: translate(20px, -100px);
+    font-size: 50%;
   }
 }
