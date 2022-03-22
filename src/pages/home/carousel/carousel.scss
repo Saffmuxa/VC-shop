@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  // border: solid 2px rgb(6, 81, 221);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  height: 150px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  // border: solid 2px rgb(255, 230, 0);
+  overflow: hidden;
+}
+
+.all-pages-container {
+  height: 100%;
+  display: flex;
+  transition: tranclate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  // border: solid 2px black;
+  border-radius: 50px;
+  // background-color: rgb(83, 69, 212);
+}
+.arrow {
+  display: block;
+  z-index: 20;
+  background-color: rgba(0, 255, 255, 0);
+}

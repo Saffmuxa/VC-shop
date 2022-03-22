@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages/home-page";
+import { Home } from "./pages/home/home-page";
+import { VideoCards } from "./pages/video-cards";
 import { ComparisonPage } from "./pages/comparison-page";
 import { RightList } from "./components/right-list";
 import { Header } from "./components/header";
@@ -34,8 +35,9 @@ function App() {
         <Header closeOpenCart={closeOpenCart} />
         <RightList />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/check" element={<ComparisonPage />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/video-cards" element={<VideoCards />} />
+          <Route exact path="/check" element={<ComparisonPage />} />
         </Routes>
         <Footer />
       </div>
