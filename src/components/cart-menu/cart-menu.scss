@@ -31,9 +31,12 @@
   }
   .drawer {
     background: white;
-    min-width: 50vh;
+    width: 600px;
+    height: 100%;
     // min-height: 60vh;
-    max-height: 100vh;
+    // max-height: 100vh;
+    // max-height: calc(100vh + 95px);
+    // height: 100vh;!!!!!!!!!!!!!!!!!!!!!!!!!!!
     z-index: 11;
     right: 0;
     top: 90px;
@@ -41,7 +44,7 @@
     // display: flex;
     // flex-direction: column;
     // justify-content: space-between;
-    padding: 20px 5px;
+    padding: 5px;
     overflow: auto;
     animation-name: menu;
     animation-duration: 0.3s;
@@ -59,40 +62,44 @@
   }
 }
 
+// .name-close {
+//   position: static;
+// }
 .name-close {
-  position: static;
-}
-.nameClose {
   // border: 2px solid rgb(44, 45, 5);
   display: flex;
-  align-items: baseline;
+  align-items: stretch;
   justify-content: space-between;
   .x {
     cursor: pointer;
   }
 }
 .cart-wrap {
-  border: 2px solid rgb(144, 5, 5);
-  max-height: calc(100vh - 310px);
-  min-height: 50vh;
+  border: 2px solid rgba(144, 5, 5, 0.5);
+  border-radius: 10px;
+  height: 100%;
+  // max-height: 100vh;
+  // max-height: calc(100vh - 95px);
+  // min-height: 50vh;
   // position: absolute;
   overflow: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
+  padding: 2px;
   // z-index: 15;
   .cardClose {
     cursor: pointer;
   }
 }
-.cartItems {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid rgb(85, 84, 84);
-  border-radius: 20px;
-  margin: 60px 0;
-}
+// .cartItems {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   border: 2px solid rgb(85, 84, 84);
+//   border-radius: 20px;
+//   margin: 60px 0;
+// }
 
 .cartItem {
   display: flex;
@@ -100,7 +107,7 @@
   justify-content: space-between;
 }
 .cartTotal {
-  padding: 0; /* Убираем отступы */
+  padding: 10px 0px; /* Убираем отступы */
 }
 .cartTotal li {
   // align-items: baseline; /* Выравниваем текст */
@@ -124,7 +131,7 @@
   border-radius: 20px;
   height: 55px;
   font-size: 18px;
-  margin: 30px 0 0 0;
+  // margin: 30px 0 0 0;
   &:hover {
     background: rgb(99, 168, 122);
   }
@@ -136,7 +143,20 @@
 }
 .hardItemsInCart {
   overflow: hidden;
+  height: calc(100% - 145px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .buy-section {
   position: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .drawer {
+    width: 100% !important;
+  }
 }

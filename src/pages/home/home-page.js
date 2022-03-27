@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home-page.scss";
-import { Carousel } from "./carousel/carouselBox";
+// import { Carousel } from "./carousel/carouselBox";
 
 export const Home = () => {
   return (
     <>
       <div className="home">
-        <Carousel>
+        <Link to="/video-cards">
+          <div className="story-block">
+            {" "}
+            <p>Видеокарты</p>
+            <img height={160} src="./img/vcard.png" alt="vcard" />
+          </div>
+        </Link>
+        {/* <Carousel>
           <Link to="/video-cards">
             <div className="slider-card">
               <img height={160} src="./img/vcard.png" alt="vcard" />
@@ -43,7 +50,7 @@ export const Home = () => {
               />
             </div>
           </Link>
-        </Carousel>
+        </Carousel> */}
       </div>
     </>
   );

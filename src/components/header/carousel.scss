@@ -6,8 +6,8 @@
   align-items: center;
 }
 .main-container {
-  height: 150px;
-  width: 450px;
+  height: 90px;
+  width: 300px;
   display: flex;
   align-items: center;
   // border: solid 2px rgb(255, 230, 0);
@@ -17,6 +17,7 @@
 .all-pages-container {
   height: 100%;
   display: flex;
+  align-items: center;
   transition: tranclate;
   transition-property: transform;
   transition-duration: 300ms;

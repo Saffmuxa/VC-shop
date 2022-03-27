@@ -1,22 +1,27 @@
 .footer {
   max-width: 1080px;
-  min-width: 640px;
+  // min-width: 640px;
   // margin: 10px auto;
   // margin-top: auto;
   // border: solid 2px white;
   color: rgb(255, 255, 255);
   // position: sticky;
-  bottom: 0px;
+  // bottom: 0px;
+  margin: 4px;
   font-size: 12px;
   grid-row: 3/4;
   grid-column: 2/6;
+  z-index: 6;
 
   .contact-real {
+    // border: solid 2px wheat;
     display: grid;
-    grid-template-rows: auto 10% minmax(25%, auto) 10px;
+    grid-template-rows: auto minmax(3%, 10%) auto;
     grid-template-columns:
-      minmax(25%, auto) minmax(5%, auto) minmax(30%, auto) minmax(5%, auto)
-      minmax(35%, auto);
+      minmax(30%, auto) minmax(2%, 5%) minmax(27%, auto) minmax(2%, 5%)
+      minmax(38%, auto);
+    padding: 0px 2px;
+    // overflow: hidden;
   }
 }
 .start {
@@ -24,10 +29,12 @@
   font-size: 16px;
 
   margin-bottom: 2px;
+  // min-width: 140px;
 }
 .company {
   grid-row: 1/2;
   grid-column: 1/2;
+  // min-width: 100px;
 }
 .sale {
   margin-top: 10px;
@@ -57,19 +64,99 @@
   border-bottom: 1px solid;
 }
 .my-name {
-  grid-row: 3/4;
+  grid-row: 2/3;
   grid-column: 1/2;
   // min-height: 50px;
 }
 .contact-web {
-  grid-row: 3/4;
+  grid-row: 2/3;
   grid-column: 3/4;
+  display: flex;
   // align-self: center;
   // padding: 0px 0px 10px 0px;
 
   img {
-    padding-right: 15px;
-    width: 60px;
+    padding: 0px 15px 10px 0px;
+    height: 60px;
+    display: block;
+
     // margin-top: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    // font-size: 10px;
+  }
+  .contact-web {
+    img {
+      height: 45px;
+      // padding: 0px;
+    }
+  }
+}
+// @media screen and (max-width: 490px) {
+//   .footer {
+//     font-size: 8px;
+//   }
+//   .contact-web {
+//     img {
+//       height: 35px;
+//       padding: 4px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 375px) {
+//   .footer {
+//     font-size: 6px;
+//   }
+//   .contact-web {
+//     img {
+//       height: 30px;
+//       padding: 2px;
+//     }
+//   }
+// }
+@media (max-width: 490px) {
+  .contact-real {
+    font-size: 8px;
+    grid-template-rows: auto minmax(1%, 5%) auto 5% auto !important;
+    grid-template-columns: minmax(30%, 48%) minmax(1%, 2%) minmax(27%, 49%) !important ;
+    .company {
+      display: none;
+    }
+    .buyer {
+      display: none;
+    }
+    .mail {
+      grid-row: 3/4;
+      grid-column: 1/4;
+    }
+    .my-name {
+      grid-row: 6/7;
+      grid-column: 1/2;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      // min-height: 50px;
+    }
+    .contact-web {
+      grid-row: 6/7;
+      grid-column: 3/4;
+      display: flex;
+      justify-content: center;
+      a img {
+        width: 37px;
+        padding: 2px;
+      }
+      // align-self: center;
+      // padding: 0px 0px 10px 0px;
+    }
+
+    // .contact-web {
+    //   img {
+    //     height: 35px;
+    //     padding: 4px;
+    //   }
+    // }
   }
 }

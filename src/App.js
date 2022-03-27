@@ -28,16 +28,16 @@ function App() {
     <BrowserRouter>
       {/* <Provider store={store}> */}
       {isCart ? <CartMenu items={items} closeOpenCart={closeOpenCart} /> : ""}
-
       <div className="wrap">
         {/* {isCart ? <BlackBG items={items} closeOpenCart={closeOpenCart} /> : ""} */}
 
         <Header closeOpenCart={closeOpenCart} />
         <RightList />
+        <Home />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          {/* <Route exact path="/" element={<Home />} /> */}
           <Route exact path="/video-cards" element={<VideoCards />} />
-          <Route exact path="/check" element={<ComparisonPage />} />
+          {/* <Route exact path="/check" element={<ComparisonPage />} /> */}
         </Routes>
         <Footer />
       </div>

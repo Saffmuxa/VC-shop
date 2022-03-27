@@ -12,35 +12,44 @@ export const CartMenu = ({ items, buyClick, closeOpenCart }) => {
     <div className="overlay">
       <div onClick={closeOpenCart} className="black"></div>
       <div className="drawer">
+        {/* <div className="name-close"> */}
         <div className="name-close">
-          <div className="nameClose">
-            <div>
-              <h2>Корзина</h2>
-            </div>
-            <img
-              onClick={closeOpenCart}
-              className="x"
-              width={50}
-              height={50}
-              src="/img/close.ico"
-              alt="close"
-            />
-          </div>
+          {/* <div> */}
+          <h2>Корзина</h2>
+          {/* </div> */}
+          <img
+            onClick={closeOpenCart}
+            className="x"
+            width={50}
+            height={50}
+            src="./img/close.ico"
+            alt="close"
+          />
         </div>
+        {/* </div> */}
         <div className="hardItemsInCart">
           {items.length > 0 ? (
             <>
               <div className="cart-wrap">
                 {items.map((addedItem) => (
                   <CartItem
-                    image={addedItem.imageUrl}
-                    price={addedItem.price}
-                    title={addedItem.title}
-                    id={addedItem.id}
+                    addedItem={addedItem}
+                    // id={addedItem.id}
                     key={addedItem.id}
                   />
                 ))}
               </div>
+              {/* <div className="cart-wrap">
+                {items.map((addedItem) => (
+                  <CartItem
+                    image={addedItem.imageUrl}
+                    price={addedItem.price}
+                    title={addedItem.title}
+                    // id={addedItem.id}
+                    key={addedItem.id}
+                  />
+                ))}
+              </div> */}
               <div className="buy-section">
                 <ul className="cartTotal">
                   <li>
@@ -66,12 +75,11 @@ export const CartMenu = ({ items, buyClick, closeOpenCart }) => {
                 <img
                   width={200}
                   height={200}
-                  src="/img/empty.png"
+                  src="./img/empty.png"
                   alt="empty"
                 />
                 <span>Упс, корзина пуста!</span>
               </div>
-              <div className="p"></div>
             </>
           )}
         </div>

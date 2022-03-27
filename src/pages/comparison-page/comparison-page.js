@@ -4,7 +4,7 @@ import "./comparison-page.scss";
 export const ComparisonPage = () => {
   return (
     <div className="check-page">
-      <h3>32524545</h3>
+      <h3>0032524545</h3>
     </div>
   );
 };

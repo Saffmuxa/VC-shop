@@ -23,18 +23,21 @@ export const HItem = ({ hardItem }) => {
   };
   return (
     <div className="card">
-      <div className="imgs-card">
+      <div className="imgs-imgs">
         <img
           width={25}
           height={25}
-          src="/img/forcheck.svg"
+          src="./img/forcheck.svg"
           alt="forcheck"
           className="check"
           //   onClick={favClick}
         />
         <img className="main-img-card" src={hardItem.imageUrl} alt="logo" />
+      </div>
+      <div className="text-title">
         <p>{hardItem.title}</p>
       </div>
+
       <div className="content-price-button">
         <div className="content-price">
           {/* <span>id={item.id}</span> */}
@@ -55,7 +58,7 @@ export const HItem = ({ hardItem }) => {
                 className="added"
                 width={40}
                 height={40}
-                src="/img/added.svg"
+                src="img/added.svg"
                 alt="added"
               />
               <p className="buyed">В корзине</p>
@@ -65,7 +68,7 @@ export const HItem = ({ hardItem }) => {
               className="add"
               width={40}
               height={40}
-              src="/img/add.svg"
+              src="./img/add.svg"
               alt="add"
             />
           )}

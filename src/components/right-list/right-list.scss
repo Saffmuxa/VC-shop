@@ -16,8 +16,15 @@
 .right-list {
   //   border: inset 2px blanchedalmond;
   width: 200px;
-  display: flex;
-  justify-content: right;
-  margin-left: auto;
+  // display: flex;
+  // justify-content: right;
+  li {
+    margin: 2%;
+  }
   //   right: 0;
+}
+@media screen and (max-width: 660px) {
+  .right-wrapper {
+    display: none;
+  }
 }

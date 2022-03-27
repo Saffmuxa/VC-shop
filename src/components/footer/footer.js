@@ -106,13 +106,13 @@ export const Footer = () => {
         </div>
         <div className="contact-web">
           <a target="_blank" href="/#">
-            <img src="/img/vk.svg" alt="VK" />
+            <img src="./img/vk.svg" alt="VK" />
           </a>
           <a arget="_blank" href="/#">
-            <img src="/img/telegram.svg" alt="telegram" />
+            <img src="./img/telegram.svg" alt="telegram" />
           </a>
           <a arget="_blank" href="/#">
-            <img src="/img/github.svg" alt="github" />
+            <img src="./img/github.svg" alt="github" />
           </a>
         </div>
       </div>

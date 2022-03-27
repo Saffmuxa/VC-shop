@@ -5,7 +5,7 @@ import { Hards } from "./cards";
 
 export const VideoCards = () => {
   return (
-    <div className="homePage">
+    <div className="cards-page">
       <div className="content">
         <div className="content__sub">
           <h1>Всё железо</h1>

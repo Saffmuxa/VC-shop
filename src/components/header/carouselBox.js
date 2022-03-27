@@ -1,7 +1,7 @@
 import { useEffect, useState, Children, cloneElement } from "react";
 import "./carousel.scss";
 
-const PAGE_WIDTH = 450;
+const PAGE_WIDTH = 300;
 export const Carousel = ({ children }) => {
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
@@ -40,7 +40,7 @@ export const Carousel = ({ children }) => {
   return (
     <div className="wrapper">
       <button className="arrow" onClick={lefty}>
-        <img width={40} src="/img/left-arrow.svg" alt="left" />
+        <img width={30} src="./img/left-arrow.svg" alt="left" />
       </button>
       <div className="main-container">
         <div
@@ -51,7 +51,7 @@ export const Carousel = ({ children }) => {
         </div>
       </div>
       <button className="arrow" onClick={righty}>
-        <img width={40} src="/img/right-arrow.svg" alt="right" />
+        <img width={30} src="./img/right-arrow.svg" alt="right" />
       </button>
     </div>
   );
