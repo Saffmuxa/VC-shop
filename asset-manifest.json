@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "./video-cards/static/css/main.b0c71604.css",
-    "main.js": "./video-cards/static/js/main.0cb0fe3b.js",
-    "static/media/texture.jpg": "./video-cards/static/media/texture.0bcfea90f8ab9171d0f8.jpg",
-    "index.html": "./video-cards/index.html",
-    "main.b0c71604.css.map": "./video-cards/static/css/main.b0c71604.css.map",
-    "main.0cb0fe3b.js.map": "./video-cards/static/js/main.0cb0fe3b.js.map"
+    "main.css": "./static/css/main.b0c71604.css",
+    "main.js": "./static/js/main.0cb0fe3b.js",
+    "static/media/texture.jpg": "./static/media/texture.0bcfea90f8ab9171d0f8.jpg",
+    "index.html": "./index.html",
+    "main.b0c71604.css.map": "./static/css/main.b0c71604.css.map",
+    "main.0cb0fe3b.js.map": "./static/js/main.0cb0fe3b.js.map"
   },
   "entrypoints": [
     "static/css/main.b0c71604.css",
