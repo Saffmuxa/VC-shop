@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/video-cards/static/css/main.a116606a.css",
-    "main.js": "/video-cards/static/js/main.d2f3bfb8.js",
+    "main.js": "/video-cards/static/js/main.743f3186.js",
     "static/media/texture.jpg": "/video-cards/static/media/texture.0bcfea90f8ab9171d0f8.jpg",
     "index.html": "/video-cards/index.html",
     "main.a116606a.css.map": "/video-cards/static/css/main.a116606a.css.map",
-    "main.d2f3bfb8.js.map": "/video-cards/static/js/main.d2f3bfb8.js.map"
+    "main.743f3186.js.map": "/video-cards/static/js/main.743f3186.js.map"
   },
   "entrypoints": [
     "static/css/main.a116606a.css",
-    "static/js/main.d2f3bfb8.js"
+    "static/js/main.743f3186.js"
   ]
 }
